@@ -1,6 +1,13 @@
 # Arriada Group Electronic E-Commerce Flutter App
 
 This is an electronic e-commerce app built using Flutter. It allows users to browse and purchase electronic products from various categories.
+By :
+-Ayah Abdalmagied 
+-ibtihal mohamed 
+
+```
+-Benghazi LATI Mobile App Camp
+```
 
 ## Features
 
@@ -50,6 +57,10 @@ If you would like to contribute to this project, feel free to submit a pull requ
 ## Contact
 
 If you have any questions or concerns about this project, please contact us at [Ayahorieth@gmail.com || ibtihalmohamed1997@gmail.com].
+
+![alt text](https://github.com/ibtihalmohamed/ag-group/blob/main/Splash.png)
+![alt text](https://github.com/ibtihalmohamed/ag-group/blob/main/Onboarding.png)
+![alt text](https://github.com/ibtihalmohamed/ag-group/blob/main/Auth.png)
 
 ## License
 
