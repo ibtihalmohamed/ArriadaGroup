@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1000601511258",
+    "project_id": "arriada-group01",
+    "storage_bucket": "arriada-group01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000601511258:android:d68ad171555e927988bf63",
+        "android_client_info": {
+          "package_name": "com.example.arriada_grouo01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000601511258-eik0otejk4l9n7l2kduhk9ukdu83ei5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjDuyuigA-O1GOIkeUhbtkvgqq1-dS17s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000601511258-eik0otejk4l9n7l2kduhk9ukdu83ei5l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1000601511258-n24pqvvccbiakv1gjtpjdj5qmk2qjmpi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.arriadaGroup01"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

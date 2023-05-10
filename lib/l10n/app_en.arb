@@ -1,0 +1,81 @@
+{
+    "introne":"Welcome to our Electronics Store App",
+    "introtwo":"Explore Our Products",
+    "introthree":"Get Started Now!",
+    "ccontinue":"Continue",
+    "skip":"Skip",
+    "signinone":"Welcome Back!",
+   "singintwo":"Sign in to access your account",
+   "singinthree":"Email Address:",
+   "singinfore":"Enter Email Address",
+   "singinfive":"Password",
+   "singinsix":"Enter Password",
+   "singinsaven":"Forgot Password?",
+"signin":"Sign In",
+"singineight":"Don’t have an account? ",
+"singinine":"Register Now",
+"cacount":"Create account",
+"hello":"Hello!",
+"loginone":"Register to Get Started",
+"username":"Username",
+"enteruser":"Enter Username",
+"phone":"Phone Number",
+"enterphone":"Enter Phone Number",
+"box":"By checking the box you agree to our Terms and Conditions.",
+"register":"Register",
+"already":"Already have an account?",
+"loginow":"Login Now",
+"forget":"Forgot Password?",
+"plase":"Please enter the email address linked with your account.",
+"sendcode":"Send Code",
+"remmber":"Remember Password?",
+"login":"Login",
+"otp":"OTP Verification",
+"enterotp":"Enter the verification code we just sent on your email address.",
+"receivedcode":"Didn’t received code? ",
+"resend":"Resend",
+"verify":"Verify",
+"ecp":"enter correct password",
+"peavpn":"please enter a valid phone numbe",
+"pvm":"Please a valid mail",
+"phonehint":"enter phone number",
+"peyp":"Please enter your password",
+"pmbe":"Password must be at least 8 characters",
+"yoic":"Your order is confirmed",
+"yowbdycttdsios":"your order will be delivered, you can track the delivery status in your orders screen.",
+"didntreceivecode":"Didn't receive the code?",
+"entervefrificationcodesenttp":"Enter the verification code sent to your phone",
+"entercode":"Enter Code",
+"forget":"Forgot password ?",
+"peye":"Please, enter your email.and You will receive an otp code to reset your password",
+"send":"send",
+"otp":"OTP Verification",
+"home":"Home",
+"likes":"Likes",
+"profile":"Profile",
+"help":"Help Center",
+"app":"Apple watch",
+"dessc":"Descripsion",
+"taw":"The Apple Watch Series 8 is the right Apple Watch for most people.The Series 8 features an always-on OLED screen that's 20% larger than the SE's",
+"total":"Total",
+"addto":"Add To Cart"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+}
