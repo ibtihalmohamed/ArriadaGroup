@@ -11,8 +11,7 @@ class ProductProvider with ChangeNotifier {
   final _api = Api();
 
   List<ApiProductModel> ProductsList = [];
-  // function for getting the products from the api
-  getProducts(String? categoryQuery) async {
+  getProducts(String? categoryQuery) async {        // function for getting the products from the api
     isLoading = true;
     notifyListeners();
     var response = await _api.get(
@@ -49,8 +48,7 @@ class ProductProvider with ChangeNotifier {
     }
   }
 
-  //function that filters the product for the search tap
-  filteringProducts(String? searchText) {
+  filteringProducts(String? searchText) {      //function that filters the product for the search tap
     getProducts(searchText);
 
     //  ProductsList.forEach((element) {

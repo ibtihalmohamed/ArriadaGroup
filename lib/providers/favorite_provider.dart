@@ -30,10 +30,8 @@ class AppProvider with ChangeNotifier {
   //// Cart Work
   final List<ProductModel> _cartProductList = [];
   final List<ProductModel> _buyProductList = [];
+   final List<ProductModel> _favouriteProductList = [];
 
-  // UserModel? _userModel;
-
-  // UserModel get getUserInformation => _userModel!;
 
   void addCartProduct(ProductModel productModel) {
     _cartProductList.add(productModel);
@@ -48,7 +46,7 @@ class AppProvider with ChangeNotifier {
   List<ProductModel> get getCartProductList => _cartProductList;
 
   ///// Favourite ///////
-  final List<ProductModel> _favouriteProductList = [];
+ 
 
   void addFavouriteProduct(ProductModel productModel) {
     _favouriteProductList.add(productModel);

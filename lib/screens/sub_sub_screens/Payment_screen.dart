@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import '../../providers/dark_theme_provider.dart';
 import '../../widgets/payment_widgets/payment_card_widget.dart';
 import '../handling_screens/suceess_order_screen.dart';
+import '../sub_screens/cart_screen.dart';
 
 class PaymentScreen extends StatelessWidget {
   @override
@@ -23,9 +24,9 @@ class PaymentScreen extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {
-                      // Navigator.of(context).push(MaterialPageRoute(
-                      //     builder: (BuildContext context) => CartScreen()));
-                      //  //navigate back to the cart screen
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => CartScreen()));
+                      //navigate back to the cart screen
                     },
                     icon: Icon(
                       Icons.arrow_back_ios_rounded,

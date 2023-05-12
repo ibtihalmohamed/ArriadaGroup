@@ -31,7 +31,7 @@ class _NavbarScreenState extends State<NavbarScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeListener = Provider.of<DarkThemeProvider>(context, listen: true);
+    // final themeListener = Provider.of<DarkThemeProvider>(context, listen: true);
     return Scaffold(
       // floatingActionButton: FloatingActionButton(onPressed: () {
       //   FirebaseFirestore firestore = FirebaseFirestore.instance;

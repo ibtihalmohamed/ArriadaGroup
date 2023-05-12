@@ -1,5 +1,6 @@
 import 'package:arriada_group01/helpers/constants.dart';
 import 'package:arriada_group01/screens/auth_screens/login_screen.dart';
+import 'package:arriada_group01/screens/handling_screens/otp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -94,9 +95,8 @@ class ForgotPassScreen extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    // authViewModel
-                    //     .login()
-                    //     .then((value) => Navigator.pop(context));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => OtpScreen()));
                   },
                   child: Text(
                     AppLocalizations.of(context)!.send,

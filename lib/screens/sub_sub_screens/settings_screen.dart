@@ -33,6 +33,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 },
                 icon: Icon(
                   Icons.arrow_back_ios_rounded,
+                  color: Colors.white,
                 ),
               ),
               Expanded(
@@ -40,7 +41,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   "Setting",
                   style: TextStyle(
                     fontSize: 24,
-                    color: themeListener.isDark ? creamyColor : mainColor,
+                    color: themeListener.isDark ? Colors.white : mainColor,
                   ),
                 ),
               ),

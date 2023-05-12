@@ -1,6 +1,7 @@
 // ignore_for_file: unnecessary_import, unused_import
 
 import 'package:arriada_group01/screens/main_screens/home_screen.dart';
+import 'package:arriada_group01/screens/sub_screens/cart_screen.dart';
 import 'package:arriada_group01/screens/sub_screens/favorite_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -230,11 +231,18 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                 color: mainColor,
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              child: Text(
-                                AppLocalizations.of(context)!.addto,
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white,
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          CartScreen()));
+                                },
+                                child: Text(
+                                  AppLocalizations.of(context)!.addto,
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),

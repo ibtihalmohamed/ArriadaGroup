@@ -1,7 +1,9 @@
 import 'package:arriada_group01/providers/favorite_provider.dart';
 import 'package:arriada_group01/providers/product_provider.dart';
 import 'package:arriada_group01/screens/auth_screens/login_screen.dart';
+import 'package:arriada_group01/screens/auth_screens/splash_screen.dart';
 import 'package:arriada_group01/screens/main_screens/custom_nav_bar.dart';
+import 'package:arriada_group01/screens/sub_screens/detailes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
@@ -108,8 +110,9 @@ class _MyAppState extends State<MyApp> {
                   ) {
                     return locale;
                   },
-                  home:
-                      auth.currentUser != null ? NavbarScreen() : LoginScreen(),
+                  home: auth.currentUser != null
+                      ? NavbarScreen()
+                      : SplashScreen(),
                 );
               })
           // builder: () {

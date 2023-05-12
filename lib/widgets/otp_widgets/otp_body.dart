@@ -30,9 +30,15 @@ class OtpBody extends StatelessWidget {
                 onTap: () {
                   // OTP code resend
                 },
-                child: const Text(
-                  "Resend OTP Code",
-                  style: TextStyle(decoration: TextDecoration.underline),
+                child: GestureDetector(
+                  onTap: () {
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(SnackBar(content: Text("a code has been sent you.")));
+                  },
+                  child: const Text(
+                    "Resend OTP Code",
+                    style: TextStyle(decoration: TextDecoration.underline),
+                  ),
                 ),
               )
             ],

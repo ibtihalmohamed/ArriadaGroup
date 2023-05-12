@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:arriada_group01/providers/dark_theme_provider.dart';
+import 'package:arriada_group01/screens/sub_screens/detailes.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:arriada_group01/helpers/constants.dart';
@@ -47,7 +48,9 @@ class Categories extends StatelessWidget {
             icon: categories[index]["icon"],
             text: categories[index]["text"],
             press: () {
-              getCategories();
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context) => data()));
+              // getCategories();
             },
           ),
         ),

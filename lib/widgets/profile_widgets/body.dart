@@ -24,6 +24,7 @@ class ProfileBody extends StatelessWidget {
           ProfileMenu(
             text: "My Account",
             icon: "assets/icons/User Icon.svg",
+        
             press: () => {
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => EditProfileScreen()))

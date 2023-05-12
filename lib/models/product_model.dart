@@ -31,7 +31,8 @@ class ApiProductModel {
 
   String toRawJson() => json.encode(toJson());
 
-  factory ApiProductModel.fromJson(Map<String, dynamic> json) => ApiProductModel(
+  factory ApiProductModel.fromJson(Map<String, dynamic> json) =>
+      ApiProductModel(
         id: json["id"].toString(),
         title: json["title"],
         price: json["price"].toString(),
@@ -90,7 +91,3 @@ class Category {
         "updatedAt": updatedAt.toIso8601String(),
       };
 }
-
-
-
-
