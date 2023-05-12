@@ -2,7 +2,9 @@ import 'package:arriada_group01/helpers/constants.dart';
 import 'package:arriada_group01/screens/sub_screens/profile_screen.dart';
 import 'package:arriada_group01/widgets/static_widgets/main_button_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../providers/dark_theme_provider.dart';
 import '../main_screens/custom_nav_bar.dart';
 
 class EditProfileScreen extends StatefulWidget {
@@ -14,12 +16,14 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   bool showPassword = false;
   @override
   Widget build(BuildContext context) {
+    final themeListener = Provider.of<DarkThemeProvider>(context, listen: true);
     return Scaffold(
         body: SingleChildScrollView(
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(
           children: [
             IconButton(
+              color: themeListener.isDark ? Colors.white : Colors.black,
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => NavbarScreen()));
@@ -27,6 +31,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               },
               icon: Icon(
                 Icons.arrow_back_ios_rounded,
+                color: themeListener.isDark ? Colors.white : Colors.black,
               ),
             ),
             Expanded(
@@ -49,10 +54,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             child: ListView(
               shrinkWrap: true,
               children: [
-                // Text(
-                //   "Edit Profile",
-                //   style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
-                // ),
                 SizedBox(
                   height: 15,
                 ),
@@ -164,7 +165,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             hintStyle: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
-              color: Colors.black,
+              color: Colors.grey,
             )),
       ),
     );

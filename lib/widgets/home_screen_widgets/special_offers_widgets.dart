@@ -2,7 +2,7 @@ import 'package:arriada_group01/screens/main_screens/detailes_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'section_title_widget.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class SpecialOffers extends StatelessWidget {
   const SpecialOffers({
     Key? key,
@@ -15,7 +15,8 @@ class SpecialOffers extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: SectionTitle(
-            title: "Special for you",
+            title: AppLocalizations.of(context)!.special,
+    
             press: () {},
           ),
         ),
@@ -26,7 +27,8 @@ class SpecialOffers extends StatelessWidget {
             children: [
               SpecialOfferCard(
                 image: "assets/sales1.png",
-                category: "Smartphone",
+                category: AppLocalizations.of(context)!.smart,
+ 
                 numOfBrands: 18,
                 press: () {
                   Navigator.of(context).push(MaterialPageRoute(
@@ -35,7 +37,7 @@ class SpecialOffers extends StatelessWidget {
               ),
               SpecialOfferCard(
                 image: "assets/sales2.png",
-                category: "Computers",
+                category:AppLocalizations.of(context)!.computers,
                 numOfBrands: 24,
                 press: () {
                   Navigator.of(context).push(MaterialPageRoute(
@@ -44,7 +46,8 @@ class SpecialOffers extends StatelessWidget {
               ),
               SpecialOfferCard(
                 image: "assets/sales3.png",
-                category: "Computers",
+                category: AppLocalizations.of(context)!.computers,
+               
                 numOfBrands: 24,
                 press: () {
                   Navigator.of(context).push(MaterialPageRoute(

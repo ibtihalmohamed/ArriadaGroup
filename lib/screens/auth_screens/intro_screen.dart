@@ -1,4 +1,3 @@
-import 'package:arriada_group01/screens/auth_screens/splash_screen.dart';
 import 'package:arriada_group01/widgets/clickable_widgets/clickacble_text_widget.dart';
 import 'package:arriada_group01/widgets/static_widgets/intro_card.dart';
 import 'package:flutter/cupertino.dart';

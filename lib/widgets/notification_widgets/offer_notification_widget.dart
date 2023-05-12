@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../providers/dark_theme_provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class CustomOfferNotifcation extends StatelessWidget {
   const CustomOfferNotifcation({Key? key}) : super(key: key);
 
@@ -46,7 +46,8 @@ class CustomOfferNotifcation extends StatelessWidget {
               RichText(
                 maxLines: 2,
                 text: TextSpan(
-                    text: "Apple and Samsung",
+                    text:  AppLocalizations.of(context)!.appl,
+                 
                     style: TextStyle(
                         fontSize: 16,
                         color: themeListener.isDark
@@ -56,8 +57,10 @@ class CustomOfferNotifcation extends StatelessWidget {
               const SizedBox(
                 height: 2,
               ),
-              Text("has an offer for you!",
+              Text(AppLocalizations.of(context)!.has,
+               
                   style: TextStyle(
+                    
                       fontSize: 14, color: Colors.black.withOpacity(0.5)))
             ],
           ),

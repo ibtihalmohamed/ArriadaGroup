@@ -14,7 +14,7 @@ class AddressCard extends StatelessWidget {
   final String clickabletext;
   @override
   Widget build(BuildContext context) {
-      final themeListener = Provider.of<DarkThemeProvider>(context, listen: true);
+    final themeListener = Provider.of<DarkThemeProvider>(context, listen: true);
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       elevation: 20,
@@ -28,18 +28,24 @@ class AddressCard extends StatelessWidget {
             vertical: 5,
           ),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: themeListener.isDark ? Colors.black : Colors.white,
             borderRadius: BorderRadius.circular(24),
           ),
           child: Row(
             children: [
-              Text(text, style: TextStyle(fontSize: 14)),
+              Text(
+                text,
+                style: TextStyle(
+                    fontSize: 14,
+                    color: themeListener.isDark ? Colors.white : Colors.black),
+              ),
               SizedBox(
                 width: 190,
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.of(context).pop();    // navigate to the map screen to change the address
+                  Navigator.of(context)
+                      .pop(); // navigate to the map screen to change the address
                 },
                 child: Text(
                   clickabletext,

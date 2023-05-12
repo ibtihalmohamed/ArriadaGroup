@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../providers/dark_theme_provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SectionTitle extends StatelessWidget {
   const SectionTitle({
@@ -29,8 +30,7 @@ class SectionTitle extends StatelessWidget {
         ),
         GestureDetector(
           onTap: press,
-          child: Text(
-            "See More",
+          child: Text( AppLocalizations.of(context)!.see,
             style: TextStyle(color: Color(0xFFBBBBBB)),
           ),
         ),

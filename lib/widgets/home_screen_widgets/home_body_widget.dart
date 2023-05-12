@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:arriada_group01/providers/product_provider.dart';
 import 'package:arriada_group01/widgets/home_screen_widgets/discount_banner_widget.dart';
 import 'package:arriada_group01/widgets/home_screen_widgets/home_header_widget.dart';

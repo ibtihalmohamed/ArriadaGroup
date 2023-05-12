@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../../providers/product_provider.dart';
 import 'product_card_widget.dart';
 import 'section_title_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class PopularProducts extends StatefulWidget {
   @override
@@ -13,26 +14,7 @@ class PopularProducts extends StatefulWidget {
 
 class _PopularProductsState extends State<PopularProducts> {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
-  // List products = [];
   String? categoryQuery;
-
-  // void getPopularProducts() async {
-  //   //function to bring data from firestore
-  //   var Products = await firestore.collection("Products").get();
-
-  //   for (var item in Products.docs) {
-  //     print(item.data());
-
-  //     products.add(ProductModel.fromJson(jsonDecode(item.data() as String)));
-  //   }
-  //   setState(() {});
-  // }
-
-  // @override
-  // void initState() {
-  //   getPopularProducts();
-  //   super.initState();
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +23,7 @@ class _PopularProductsState extends State<PopularProducts> {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: SectionTitle(
-              title: "Popular Products",
+              title: AppLocalizations.of(context)!.popular,
               press: () {
                 Provider.of<ProductProvider>(context, listen: false)
                     .getProducts(categoryQuery);

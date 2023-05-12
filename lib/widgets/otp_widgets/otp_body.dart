@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../helpers/constants.dart';
 import '../../helpers/size_configuration.dart';
 import 'otp_form_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class OtpBody extends StatelessWidget {
   const OtpBody({super.key});
@@ -19,10 +20,12 @@ class OtpBody extends StatelessWidget {
             children: [
               SizedBox(height: SizeConfig.screenHeight * 0.05),
               Text(
-                "OTP Verification",
+                AppLocalizations.of(context)!.otp,
                 style: headingStyle,
               ),
-              const Text("We sent your code to +218 91 123 4 *** "),
+              Text(
+                AppLocalizations.of(context)!.we,
+              ),
               buildTimer(),
               const OtpForm(),
               SizedBox(height: SizeConfig.screenHeight * 0.1),
@@ -32,11 +35,13 @@ class OtpBody extends StatelessWidget {
                 },
                 child: GestureDetector(
                   onTap: () {
-                    ScaffoldMessenger.of(context)
-                        .showSnackBar(SnackBar(content: Text("a code has been sent you.")));
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text(
+                      AppLocalizations.of(context)!.code,
+                    )));
                   },
-                  child: const Text(
-                    "Resend OTP Code",
+                  child: Text(
+                    AppLocalizations.of(context)!.resend,
                     style: TextStyle(decoration: TextDecoration.underline),
                   ),
                 ),
@@ -52,7 +57,7 @@ class OtpBody extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text("This code will expired in "),
+        Text("This code will expired in "),
         TweenAnimationBuilder(
           tween: Tween(begin: 30.0, end: 0.0),
           duration: const Duration(seconds: 30),

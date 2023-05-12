@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../providers/dark_theme_provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class CustomOrderNotifcation extends StatefulWidget {
   const CustomOrderNotifcation({Key? key}) : super(key: key);
 
@@ -31,8 +31,8 @@ class _CustomOrderNotifcationState extends State<CustomOrderNotifcation> {
           mainAxisSize: MainAxisSize.min,
           // mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              "Order Status",
+            Text( AppLocalizations.of(context)!.order,
+       
               style: TextStyle(
                   fontSize: 16,
                   color: themeListener.isDark ? Colors.white : Colors.black)
@@ -44,8 +44,8 @@ class _CustomOrderNotifcationState extends State<CustomOrderNotifcation> {
             //   height: 0.1,
             //   width: 5,
             // ),
-            Text(
-              "our driver is on the way!",
+            Text(AppLocalizations.of(context)!.our,
+             
               style: TextStyle(
                   fontSize: 14,
                   color: themeListener.isDark ? Colors.white : Colors.black

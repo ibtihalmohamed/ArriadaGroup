@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../../helpers/constants.dart';
 import '../../providers/dark_theme_provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SearchField extends StatefulWidget {
   const SearchField({
@@ -23,7 +24,9 @@ class _SearchFieldState extends State<SearchField> {
     return Container(
       width: size.width * 0.6,
       decoration: BoxDecoration(
-        color: creamyColor.withOpacity(0.1),
+        color: themeListener.isDark
+            ? Colors.white70
+            : creamyColor.withOpacity(0.1),
         borderRadius: BorderRadius.circular(15),
       ),
       child: TextFormField(
@@ -37,7 +40,7 @@ class _SearchFieldState extends State<SearchField> {
             border: InputBorder.none,
             focusedBorder: InputBorder.none,
             enabledBorder: InputBorder.none,
-            hintText: "Search product",
+            hintText: AppLocalizations.of(context)!.search,
             hintStyle: TextStyle(
                 color: themeListener.isDark ? Colors.white : Colors.black),
             prefixIcon: Icon(Icons.search,

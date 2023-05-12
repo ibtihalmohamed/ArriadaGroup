@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../providers/dark_theme_provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class DiscountBanner extends StatelessWidget {
   const DiscountBanner({
@@ -29,9 +30,12 @@ class DiscountBanner extends StatelessWidget {
         TextSpan(
           style: TextStyle(color: Colors.white),
           children: [
-            TextSpan(text: "A Summer Offer\n"), // ibtihal localize here****
             TextSpan(
-              text: "Cashback 20%",
+              text: AppLocalizations.of(context)!.summer,
+            ), // ibtihal localize here****
+            //ok i do it
+            TextSpan(
+              text: AppLocalizations.of(context)!.cashb,
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,

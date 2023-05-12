@@ -9,7 +9,7 @@ import '../../main.dart';
 import '../../screens/sub_sub_screens/settings_screen.dart';
 import 'profile_menu.dart';
 import 'profile_pic.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class ProfileBody extends StatelessWidget {
   const ProfileBody({super.key});
 
@@ -22,7 +22,8 @@ class ProfileBody extends StatelessWidget {
           const ProfilePic(),
           const SizedBox(height: 20),
           ProfileMenu(
-            text: "My Account",
+            text:    AppLocalizations.of(context)!.account,
+      
             icon: "assets/icons/User Icon.svg",
         
             press: () => {
@@ -36,7 +37,8 @@ class ProfileBody extends StatelessWidget {
           //   press: () {},
           // ),
           ProfileMenu(
-            text: "Settings",
+            text: 
+               AppLocalizations.of(context)!.settings,
             icon: "assets/icons/Settings.svg",
             press: () => {
               Navigator.of(context).push(MaterialPageRoute(
@@ -44,7 +46,8 @@ class ProfileBody extends StatelessWidget {
             },
           ),
           ProfileMenu(
-            text: "Help Center",
+            text: 
+                       AppLocalizations.of(context)!.help ,
             icon: "assets/icons/Question mark.svg",
             press: () => {
               Navigator.of(context).push(MaterialPageRoute(
@@ -52,7 +55,7 @@ class ProfileBody extends StatelessWidget {
             },
           ),
           ProfileMenu(
-            text: "Log Out",
+            text:   AppLocalizations.of(context)!.log ,
             icon: "assets/icons/Log out.svg",
             press: () => {
               FirebaseAuth.instance.signOut().then((value) {

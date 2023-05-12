@@ -3,9 +3,7 @@ import 'package:arriada_group01/screens/sub_screens/favorite_screen.dart';
 import 'package:arriada_group01/screens/sub_screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:provider/provider.dart';
 
-import '../../providers/dark_theme_provider.dart';
 import 'home_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
