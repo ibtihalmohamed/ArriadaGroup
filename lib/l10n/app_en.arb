@@ -76,7 +76,11 @@
 "account":"My Account",
 "settings":"Settings",
 "help":"Help Center",
-"log":"Log Out"
+"log":"Log Out",
+"language":"Language :",
+"arabic":"ARABIC",
+"english":"ENGLISH",
+"dark":"Dark mode"
 
 
 

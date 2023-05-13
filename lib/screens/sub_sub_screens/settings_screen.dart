@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../helpers/constants.dart';
 import '../../providers/dark_theme_provider.dart';
 import '../../widgets/static_widgets/main_button_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -38,7 +39,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               Expanded(
                 child: Text(
-                  "Setting",
+                  AppLocalizations.of(context)!.settings,
                   style: TextStyle(
                     fontSize: 24,
                     color: themeListener.isDark ? Colors.white : mainColor,
@@ -49,9 +50,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
             const SizedBox(
               height: 20,
             ),
-            buildNotificationOptionRow("Dark Mode", themeListener.isDark),
+            buildNotificationOptionRow(
+                AppLocalizations.of(context)!.dark, themeListener.isDark),
             Text(
-              "Language :",
+              AppLocalizations.of(context)!.language,
               style: TextStyle(
                   fontSize: 19,
                   color: themeListener.isDark
@@ -62,7 +64,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               height: 20,
             ),
             MainButton(
-                text: "ARABIC",
+                text: AppLocalizations.of(context)!.arabic,
                 onPressed: () {
                   MyApp.setLocale(context, Locale("ar"));
                 }),
@@ -70,7 +72,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               height: 10,
             ),
             MainButton(
-                text: "ENGLISH",
+                text: AppLocalizations.of(context)!.english,
                 onPressed: () {
                   MyApp.setLocale(context, Locale("en"));
                 }),
